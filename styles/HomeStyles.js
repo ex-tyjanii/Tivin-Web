@@ -20,7 +20,6 @@ const Container = styled.div`
     @media only screen and (max-width: 600px) {
         display: flex;
         flex-direction:column;
-        margin-top: 180px;
         width: 90%;
     }
     
@@ -41,6 +40,10 @@ const TextWrapper = styled.div`
             text-align: center;
         }
     }
+    @media only screen and (max-width: 600px) {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
 `
 
 const ImageWrapper = styled.div`
@@ -48,7 +51,10 @@ const ImageWrapper = styled.div`
     padding-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    @media only screen and (max-width: 600px) {
+        padding-left:0;
+        height: 500px;
+    }
     .top_img{
         position:relative;
         margin-top:50px;
@@ -57,11 +63,24 @@ const ImageWrapper = styled.div`
             left: 120px;
             width: 350px;
             height: 450px;
+            @media only screen and (max-width: 600px) {
+                width: 220px;
+                height:275px;
+                left: 0;
+            }
         }
         .abs-zero{
             position: absolute;
             bottom: 100px;
             left: 200px;
+           z-index: 10000000000000000000000000;
+           @media only screen and (max-width: 600px) {
+                left: 50px;
+                bottom: 150px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            margin-top:0px;
         }
     }
     .bottom_img{
@@ -72,11 +91,21 @@ const ImageWrapper = styled.div`
             width: 350px;
             height: 450px;
             right:0;
+            @media only screen and (max-width: 600px) {
+                width: 220px;
+                height:275px;
+                top:180px;
+            }
         }
         .abs-x{
             position: absolute;
             right: 100px;
             top: 150px;
+           z-index: 1000000;
+           @media only screen and (max-width: 600px) {
+                top:120px;
+                right:50px;
+           }
         }
     }
   
