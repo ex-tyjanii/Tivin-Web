@@ -20,11 +20,12 @@ export default function Home() {
               <DownloadButton/>
               <DownloadButton/>
             </BtnDiv>
+           
           </TextWrapper>
           <ImageWrapper>
             <div className='top_img'>
               <div className='abs'>
-                <Image src='/assets/hero2.jpg' width='350px' height='450px'/> 
+                <Image src='/assets/hero2.jpg' layout='fill'/>
               </div>
               <div className='abs-zero'>
                 <Image src='/assets/zero.svg' width={20} height={20}/> 
@@ -32,7 +33,7 @@ export default function Home() {
             </div>
             <div className='bottom_img'>
               <div className='abs'>
-              <Image src='/assets/heroo.jpg'  width='350px' height='450px'/> 
+              <Image src='/assets/heroo.jpg'  layout='fill'/> 
               </div>
               <div className='abs-x'>
                 <Image src='/assets/x.svg' width={20} height={20}/> 

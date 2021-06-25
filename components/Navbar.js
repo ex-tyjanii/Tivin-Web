@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { NavWrapper, NavLinks } from '../styles/NavStyles'
+import { NavWrapper, NavLinks,Burger } from '../styles/NavStyles'
 import Link from 'next/link'
 import Button from './Button'
 const Navbar = () => {
@@ -21,6 +21,10 @@ const Navbar = () => {
                 </Link>
                 <Button>Download Tivin</Button>
             </NavLinks>
+            <Burger>
+                <span></span>
+                <span className='burger_bottom'></span>
+            </Burger>
         </NavWrapper>
     )
 }
