@@ -11,7 +11,7 @@ const BtnStyles = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 10px 15px;
     @media only screen and (max-width: 800px) {
         font-size: 14px;
     }

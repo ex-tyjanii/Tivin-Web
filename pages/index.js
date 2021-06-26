@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { HomeWrapper,TextWrapper,Container,ImageWrapper,BtnDiv } from '../styles/HomeStyles'
 import {DownloadButton} from '../components/Button'
 import WhyTivin from '../components/WhyTivin'
+import ImageShowcase from '../components/ImageShowcase'
 export default function Home() {
   return (
     <div>
@@ -44,6 +45,7 @@ export default function Home() {
         </Container>
           
       </HomeWrapper>
+      <ImageShowcase/>
       <WhyTivin/>
     </div>
   )
