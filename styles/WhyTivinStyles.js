@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 40% 60%;
     margin-top: 150px;
-    @media screen and (min-width:200px) and (max-width:900px){
+    @media screen and (min-width:200px) and (max-width:1000px){
         display: flex;
         flex-direction: column;
         margin-top: 0;
@@ -59,16 +59,13 @@ const ImageDiv = styled.div`
         height: 500px;
         position: relative;
         @media only screen and (max-width: 600px) {
-            /* width: 250px; */
-            /* height: 250px; */
-            width: 80%;
             height: 250px;
         }
-        @media only screen and (max-width: 100px) {
-            
+        @media screen and (min-width:200px) and (max-width:1000px){
             width: 100%;
-            height: 500px;
+            margin-top: 80px;
         }
+     
     }
     /* @media only screen and (max-width: 600px) {
         margin-top: 80px;
