@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { HomeWrapper,TextWrapper,Container,ImageWrapper,BtnDiv } from '../styles/HomeStyles'
 import {DownloadButton} from '../components/Button'
+import WhyTivin from '../components/WhyTivin'
 export default function Home() {
   return (
     <div>
@@ -40,12 +41,10 @@ export default function Home() {
               </div>
             </div>
           </ImageWrapper>
-          <div className='green-box'>
-            
-          </div>
         </Container>
           
       </HomeWrapper>
+      <WhyTivin/>
     </div>
   )
 }

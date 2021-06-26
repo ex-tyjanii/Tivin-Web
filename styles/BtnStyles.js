@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const BtnStyles = styled.a`
     height: 50px;
-    padding: 0 20px;
     background-color: #222020;
     color:#fff;
     border-radius: 4px;
@@ -12,6 +11,12 @@ const BtnStyles = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 800px) {
+        font-size: 14px;
+    }
+    /* @media only screen and (max-width: 600px) {
+    } */
     
 `
 const DownloadBtn = styled.a`

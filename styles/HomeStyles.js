@@ -63,6 +63,11 @@ const ImageWrapper = styled.div`
             left: 120px;
             width: 350px;
             height: 450px;
+            @media only screen and (max-width: 1200px) {
+                width: 300px;
+                height:380px;
+                left: 80px;
+            }
             @media only screen and (max-width: 600px) {
                 width: 220px;
                 height:275px;
@@ -74,6 +79,10 @@ const ImageWrapper = styled.div`
             bottom: 100px;
             left: 200px;
            z-index: 10000000000000000000000000;
+           @media only screen and (max-width: 1200px) {
+                left: 150px;
+                bottom: 200px;
+           }
            @media only screen and (max-width: 600px) {
                 left: 50px;
                 bottom: 150px;
@@ -91,6 +100,10 @@ const ImageWrapper = styled.div`
             width: 350px;
             height: 450px;
             right:0;
+            @media only screen and (max-width: 1200px) {
+                width: 300px;
+                height:380px;
+            }
             @media only screen and (max-width: 600px) {
                 width: 220px;
                 height:275px;
@@ -99,9 +112,9 @@ const ImageWrapper = styled.div`
         }
         .abs-x{
             position: absolute;
-            right: 100px;
-            top: 150px;
-           z-index: 1000000;
+            right: 80px;
+            top: 250px;
+            z-index: 1000000;
            @media only screen and (max-width: 600px) {
                 top:120px;
                 right:50px;
