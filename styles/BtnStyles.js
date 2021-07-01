@@ -15,9 +15,6 @@ const BtnStyles = styled.a`
     @media only screen and (max-width: 800px) {
         font-size: 14px;
     }
-    /* @media only screen and (max-width: 600px) {
-    } */
-    
 `
 const DownloadBtn = styled.a`
     background-color: #222020;

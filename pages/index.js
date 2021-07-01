@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { HomeWrapper,TextWrapper,Container,ImageWrapper,BtnDiv } from '../styles/HomeStyles'
 import {DownloadButton} from '../components/Button'
+import CardsSection from '../components/CardsSection'
 import WhyTivin from '../components/WhyTivin'
 import ImageShowcase from '../components/ImageShowcase'
+import MoreInfo from '../components/MoreInfo'
+import PreFooter from '../components/PreFooter'
 export default function Home() {
   return (
     <div>
@@ -47,6 +50,9 @@ export default function Home() {
       </HomeWrapper>
       <ImageShowcase/>
       <WhyTivin/>
+      <CardsSection/>
+      <MoreInfo/>
+      <PreFooter/>
     </div>
   )
 }
