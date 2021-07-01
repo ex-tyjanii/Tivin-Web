@@ -29,6 +29,10 @@ const CardSectionWrapper = styled.div`
     .photo-wrapper{
         position: relative;
         height: ${ props=>props.divHeight || '30vh' };
+
+       @media screen and (min-width:600px) and (max-width:801px){ 
+            height: ${ props=>props.divHeight || '50vh' };
+        }
     }
     .content-wrapper{
         padding: 24px;
