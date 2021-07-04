@@ -10,6 +10,8 @@ const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         margin-top: 0;
+        width: 90%;
+
     }
     
 `
