@@ -56,6 +56,8 @@ const ImageWrapper = styled.div`
     margin-top: 100px;
     @media only screen and (max-width: 600px) {
         margin-top: 0px;
+        padding-left: 0px;
+
     }
 
 `
