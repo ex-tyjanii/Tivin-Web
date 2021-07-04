@@ -69,11 +69,11 @@ const CardsSection = () => {
                 <div>
                     <CardWrapper>
                         <div className='photo-wrapper'>
-                            <Image src='/assets/clothes.png' layout='fill'/>
+                            <Image src='/assets/delivery.png' layout='fill'/>
                         </div>
                         <div className='content-wrapper'>
-                            <h4>Get styled</h4>
-                            <p>From women to men to kids, discover a wide selection of items across thousands of brands—at prices</p>   
+                            <h4>Who got you covered</h4>
+                            <p>Orders arrive in two days with Priority Mail shipping. If you love it, leave the seller a note to let them know</p>   
                         </div>
                     </CardWrapper>
                 </div>

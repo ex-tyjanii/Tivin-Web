@@ -13,7 +13,7 @@ export const sliderData = [
     },
     {
         id:3,
-        img:'/assets/clothes.png',
+        img:'/assets/delivery.png',
         title:'Get Styled',
         body:'Orders arrive in two days with Priority Mail shipping. If you love it, leave the seller a note to let them know'
     },
