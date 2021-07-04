@@ -7,6 +7,7 @@ import WhyTivin from '../components/WhyTivin'
 import ImageShowcase from '../components/ImageShowcase'
 import MoreInfo from '../components/MoreInfo'
 import PreFooter from '../components/PreFooter'
+import { DownloadBtnsGrid } from '../styles/PreFooterStyles'
 export default function Home() {
   return (
     <div>
@@ -21,29 +22,16 @@ export default function Home() {
             <div>
               <h1>We are making the way people buy and sell clothes easier and convenient.</h1>
             </div>
-            <BtnDiv>
-              <DownloadButton/>
-              <DownloadButton/>
-            </BtnDiv>
+          
+            <DownloadBtnsGrid> 
+                        <Image src='/assets/appstore.svg' width='200' height='50'/>
+                        <Image src='/assets/googleplay.svg' width='200' height='50'/>
+                    </DownloadBtnsGrid> 
+           
            
           </TextWrapper>
           <ImageWrapper>
-            <div className='top_img'>
-              <div className='abs'>
-                <Image src='/assets/hero2.jpg' layout='fill'/>
-              </div>
-              <div className='abs-zero'>
-                <Image src='/assets/zero.svg' width={20} height={20}/> 
-              </div>
-            </div>
-            <div className='bottom_img'>
-              <div className='abs'>
-              <Image src='/assets/heroo.jpg'  layout='fill'/> 
-              </div>
-              <div className='abs-x'>
-                <Image src='/assets/x.svg' width={20} height={20}/> 
-              </div>
-            </div>
+            <Image src='/assets/hero-main.png' width='600' height='700'/>
           </ImageWrapper>
         </Container>
           

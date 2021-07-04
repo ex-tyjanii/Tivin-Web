@@ -11,16 +11,18 @@ const Container = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.25fr 2fr;
+    gap: 100px;
     /* height: 1000px; */
-    .green-box{
+    /* .green-box{
         height: 1000px;
         display: flex;
         flex-direction:column;
-    }
+    } */
     @media only screen and (max-width: 600px) {
         display: flex;
         flex-direction:column;
         width: 90%;
+        gap:0px;
     }
     
 `
@@ -29,9 +31,11 @@ const TextWrapper = styled.div`
     margin-top: -100px;
     h1{
         font-size: 40px;
+        margin-bottom: 100px;
         @media only screen and (max-width: 600px) {
             font-size: 32px;
             text-align: center;
+        margin-bottom: 50px;
         }
     }
     .shop_tivin{
@@ -47,81 +51,13 @@ const TextWrapper = styled.div`
 `
 
 const ImageWrapper = styled.div`
-    height: 700px;
+    /* height: 700px; */
     padding-left: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
     @media only screen and (max-width: 600px) {
-        padding-left:0;
-        height: 500px;
+        margin-top: 0px;
     }
-    .top_img{
-        position:relative;
-        margin-top:50px;
-        .abs{
-            position: absolute;
-            left: 120px;
-            width: 350px;
-            height: 450px;
-            @media only screen and (max-width: 1200px) {
-                width: 300px;
-                height:380px;
-                left: 80px;
-            }
-            @media only screen and (max-width: 600px) {
-                width: 220px;
-                height:275px;
-                left: 0;
-            }
-        }
-        .abs-zero{
-            position: absolute;
-            bottom: 100px;
-            left: 200px;
-           z-index: 10000000000000000000000000;
-           @media only screen and (max-width: 1200px) {
-                left: 150px;
-                bottom: 200px;
-           }
-           @media only screen and (max-width: 600px) {
-                left: 50px;
-                bottom: 150px;
-            }
-        }
-        @media only screen and (max-width: 600px) {
-            margin-top:0px;
-        }
-    }
-    .bottom_img{
-        position: relative;        
-        .abs{
-            position: absolute;
-            bottom: 0;
-            width: 350px;
-            height: 450px;
-            right:0;
-            @media only screen and (max-width: 1200px) {
-                width: 300px;
-                height:380px;
-            }
-            @media only screen and (max-width: 600px) {
-                width: 220px;
-                height:275px;
-                top:180px;
-            }
-        }
-        .abs-x{
-            position: absolute;
-            right: 80px;
-            top: 250px;
-            z-index: 1000000;
-           @media only screen and (max-width: 600px) {
-                top:120px;
-                right:50px;
-           }
-        }
-    }
-  
+
 `
 const BtnDiv = styled.div`
     display: grid;
