@@ -28,14 +28,14 @@ const Container = styled.div`
 `
 const TextWrapper = styled.div`
     align-self: center;
-    margin-top: -100px;
+    /* margin-top: -100px; */
     h1{
         font-size: 40px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
         @media only screen and (max-width: 600px) {
             font-size: 32px;
             text-align: center;
-        margin-bottom: 50px;
+            margin-bottom: 56px;
         }
     }
     .shop_tivin{
