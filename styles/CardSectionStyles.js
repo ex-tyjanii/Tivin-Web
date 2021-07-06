@@ -30,8 +30,12 @@ const CardSectionWrapper = styled.div`
         position: relative;
         height: ${ props=>props.divHeight || '30vh' };
 
-       @media screen and (min-width:600px) and (max-width:801px){ 
+       @media screen and (min-width:600px) and (max-width:799px){ 
             height: ${ props=>props.divHeight || '50vh' };
+        }
+        @media screen and (min-width:799px) and (max-width:1000px){ 
+            /* height: ${ props=>props.divHeight || '50vh' }; */
+            height: 20vh;
         }
     }
     .content-wrapper{
@@ -55,7 +59,7 @@ const GridsWrapper =  styled.div`
     div{
         width: 100%;
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 799px) {
         display: none;
     }
 `

@@ -1,29 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/dist/client/image'
-import {BtnStyles,DownloadBtn} from '../styles/BtnStyles'
-const Button = ({children}) => {
+import {BtnStyles} from '../styles/BtnStyles'
+const Button = ({view100,children}) => {
     return (
         <Link href='/'>
-            <BtnStyles>
+            <BtnStyles view100={view100}>
                 {children}
             </BtnStyles>
         </Link>
         
-    )
-}
-
-export const DownloadButton = ()=>{
-    return (
-        <Link href='/'>
-            <DownloadBtn>
-                <Image src='/assets/apple.svg' width={20} height={20}/>
-                <div>
-                    <p className='regular-font'>Download on the</p>
-                    <p className='bold-font'>App Store</p>
-                </div>
-            </DownloadBtn>
-        </Link>
     )
 }
 

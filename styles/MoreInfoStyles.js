@@ -5,6 +5,9 @@ const MoreInfoWrapper = styled.div`
     width: 100%;
     background-color: #F8F8F8;
     margin-bottom: 120px;
+    @media only screen and (max-width: 800px) {
+        margin-bottom: 80px;
+    }
 `
 const MoreInfoGrid = styled.div`
     width: 80%;

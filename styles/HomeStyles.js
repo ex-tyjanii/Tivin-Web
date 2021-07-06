@@ -12,13 +12,7 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: 1.25fr 2fr;
     gap: 100px;
-    /* height: 1000px; */
-    /* .green-box{
-        height: 1000px;
-        display: flex;
-        flex-direction:column;
-    } */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
         display: flex;
         flex-direction:column;
         width: 90%;
@@ -32,7 +26,7 @@ const TextWrapper = styled.div`
     h1{
         font-size: 40px;
         margin-bottom: 40px;
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 900px) {
             font-size: 32px;
             text-align: center;
             margin-bottom: 56px;
@@ -40,8 +34,11 @@ const TextWrapper = styled.div`
     }
     .shop_tivin{
         margin-bottom: 24px;
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 900px) {
             text-align: center;
+        }
+        @media only screen and (min-width:600px) and (max-width: 900px) {
+            margin-top: 100px;
         }
     }
     @media only screen and (max-width: 600px) {
@@ -62,10 +59,14 @@ const ImageWrapper = styled.div`
 
 `
 const BtnDiv = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 40px;
+    margin-left: -15px;
+    display: flex;
+    
+    @media only screen and (max-width: 900px) {
+        align-items: center;
+    justify-content: center;
+    }
+
 `
 export {
     HomeWrapper,

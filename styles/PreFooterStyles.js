@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 const PreFooterWrapper = styled.div`
-   
     background-color: #222020;
     width: 100%;
     p{

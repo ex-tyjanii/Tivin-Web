@@ -8,6 +8,7 @@ import ImageShowcase from '../components/ImageShowcase'
 import MoreInfo from '../components/MoreInfo'
 import PreFooter from '../components/PreFooter'
 import { DownloadBtnsGrid } from '../styles/PreFooterStyles'
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
@@ -23,11 +24,10 @@ export default function Home() {
               <h1>We are making the way people buy and sell clothes easier and convenient.</h1>
             </div>
           
-            <DownloadBtnsGrid> 
-                        <Image src='/assets/appstore.svg' width='200' height='50'/>
-                        <Image src='/assets/googleplay.svg' width='200' height='50'/>
-                    </DownloadBtnsGrid> 
-           
+              <BtnDiv> 
+                  <Image src='/assets/appstore.svg' width='200' height='50'/>
+                  <Image src='/assets/googleplay.svg' width='200' height='50'/>
+              </BtnDiv> 
            
           </TextWrapper>
           <ImageWrapper>
@@ -41,6 +41,7 @@ export default function Home() {
       <CardsSection/>
       <MoreInfo/>
       <PreFooter/>
+      <Footer/>
     </div>
   )
 }
